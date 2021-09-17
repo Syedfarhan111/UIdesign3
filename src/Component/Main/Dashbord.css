@@ -1,0 +1,11 @@
+.dashboard{
+    padding: 20px;
+    margin: 40px;
+    text-align: center;
+    align-items: baseline;
+}
+.dashbtn{
+    background-color: rgb(218,233,250) !important;
+    color: black !important;
+    border: 2px solid black !important;
+}

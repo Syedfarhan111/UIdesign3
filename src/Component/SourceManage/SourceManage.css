@@ -1,0 +1,17 @@
+.checkboxes{
+    padding: 10px;
+    margin: 30px;
+}
+.usernamerow{
+    padding: 60px;
+}
+.subhead{
+    border-radius: 0 20px 0 20px !important;
+    padding: 20px;
+    text-align: center;
+    background-color: rgb(255,242,208) !important;
+    border : 2px solid rgb(229,206,153) !important;
+}
+.arrowimg:hover{
+    cursor: pointer !important;
+}
