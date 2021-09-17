@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react";
-import { Row, Col, Form, InputGroup, Card, Button } from "react-bootstrap";
+import { Button, Row, Col, Form, InputGroup, Card } from "react-bootstrap";
 import { InfoUser } from "../../Reducer/InfoUser.js";
 import "./SourceManage.css";
 
 export const SourceManage = () => {
-  const [arrshow, setArrshow] = useState(false);
-  const [showlogin, setShowLogin] = useState(false);
+  const [arrayDisplay, setarrayDisplay] = useState(false);
+  const [showLog, setshowLog] = useState(false);
   const [username, setUsername] = useState("");
   const [isvalid, setIsvalid] = useState(true);
 
@@ -35,7 +35,7 @@ export const SourceManage = () => {
           <InputGroup className="mb-3">
             <InputGroup.Checkbox
               aria-label="Checkbox for following text input"
-              onClick={() => setArrshow(!arrshow)}
+              onClick={() => setarrayDisplay(!arrayDisplay)}
             />
             <img
               src="./facebook-logo.png"
@@ -61,18 +61,18 @@ export const SourceManage = () => {
           </InputGroup>
         </Col>
         <Col md={2}>
-          {arrshow ? (
+          {arrayDisplay ? (
             <img
               className="arrowimg"
               src="./arrow.png"
               style={{ width: "100px" }}
               alt="imge"
-              onClick={() => setShowLogin(true)}
+              onClick={() => setshowLog(true)}
             />
           ) : null}
         </Col>
         <Col md={6}>
-          {showlogin ? (
+          {showLog ? (
             <div>
               <Row>
                 <Col md={6}></Col>
